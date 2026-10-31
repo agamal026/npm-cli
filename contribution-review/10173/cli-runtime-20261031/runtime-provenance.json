@@ -1,0 +1,21 @@
+[
+  {
+    "component": "node",
+    "version": "22.23.1",
+    "source": "https://nodejs.org/dist/v22.23.1/node-v22.23.1-linux-x64.tar.xz",
+    "bytes": 31068444,
+    "sha256": "9749e988f437343b7fa832c69ded82a312e41a03116d766797ac14f6f9eee578",
+    "checksum_source": "https://nodejs.org/dist/v22.23.1/SHASUMS256.txt"
+  },
+  {
+    "component": "npm",
+    "version": "11.18.0",
+    "arborist": "9.9.0",
+    "source": "https://registry.npmjs.org/npm/-/npm-11.18.0.tgz",
+    "metadata_source": "https://registry.npmjs.org/npm/11.18.0",
+    "gitHead": "fef2b1324991a098c64132b77339ba9989b5e3bf",
+    "bytes": 2997746,
+    "sha256": "73f6155215ebabf4ed96dca1f567c2372cc713c33af2e5b9b62fde4e92373e2e",
+    "integrity": "sha512-T67M4L5wNm0cZ7EBLErcEkY1SmzEW/WJ+SADBzsFUY1UdAPfFHXFQtZ6SEXiK0+vzXysCvAsepbMaBTwnrAD+w=="
+  }
+]

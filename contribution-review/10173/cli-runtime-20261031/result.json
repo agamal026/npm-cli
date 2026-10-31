@@ -1,0 +1,367 @@
+{
+  "issue": "https://github.com/npm/cli/issues/10173",
+  "diagnostic": "Synthetic published-CLI/configuration/runtime comparison; not exact reporter state",
+  "node_version": "v22.23.1",
+  "npm_version": "11.18.0",
+  "arborist_version": "9.9.0",
+  "registry": "http://127.0.0.1:43617/",
+  "fixture_source_sha256": "56075593e3e79bd4879bb4768c7e009025c8f0f0b1f7a15a5845e0699cd70fe7",
+  "tarball_sha256": {
+    "1.0.0-linux-x64": "bb218f053a802c18223c8a4ca9342e72b2cfe6394ae5a5cada0fc288593ffbcf",
+    "1.0.0-linux-arm64": "85e4a7234221d0308f375fc5548481aaf724f9ebdfd1e14076af548753a29ff9",
+    "1.0.0": "7a747c6828cb6cfc291b68bab63bfc7e920d395f5cbe55a82284127fe2c693b4",
+    "2.0.0-linux-x64": "4127d5882dfaa5ce766e533e21a0591258bf7f1b63190ea62ed1ebd2ea3039dc",
+    "2.0.0-linux-arm64": "c202b1ccf28cfd124da3c04f356583ef58ac5e18e716aac33067fd6ad413fa74",
+    "2.0.0": "86d3eecdcf4a4913c91ac8d7f8a2f6565e48921ade50fd96b6767eb7e819b328"
+  },
+  "commands": [
+    {
+      "stage": "npm-version",
+      "arguments": [
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.217,
+      "stdout": "11.18.0\n",
+      "stderr": ""
+    },
+    {
+      "stage": "configure-prefix",
+      "arguments": [
+        "config",
+        "set",
+        "prefix",
+        "$DIAGNOSTIC_ROOT/run/prefix",
+        "--location=user"
+      ],
+      "exit_code": 0,
+      "seconds": 0.116,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "stage": "verify-prefix",
+      "arguments": [
+        "config",
+        "get",
+        "prefix"
+      ],
+      "exit_code": 0,
+      "seconds": 0.094,
+      "stdout": "$DIAGNOSTIC_ROOT/run/prefix\n",
+      "stderr": ""
+    },
+    {
+      "stage": "old-install",
+      "arguments": [
+        "install",
+        "-g",
+        "@oss-test/cli@latest"
+      ],
+      "exit_code": 0,
+      "seconds": 0.397,
+      "stdout": "\nadded 2 packages in 336ms\n",
+      "stderr": "npm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 22ms (cache miss)\nnpm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 8ms (cache miss)\nnpm http cache @oss-test/cli@http://127.0.0.1:43617/tarballs/1.0.0.tgz 0ms (cache hit)\nnpm http cache @oss-test/cli-linux-x64@http://127.0.0.1:43617/tarballs/1.0.0-linux-x64.tgz 0ms (cache hit)\nnpm http fetch GET 200 http://127.0.0.1:43617/tarballs/1.0.0.tgz 15ms (cache miss)\nnpm http fetch GET 200 http://127.0.0.1:43617/tarballs/1.0.0-linux-x64.tgz 14ms (cache miss)\n"
+    },
+    {
+      "stage": "upgrade",
+      "arguments": [
+        "install",
+        "-g",
+        "@oss-test/cli@latest"
+      ],
+      "exit_code": 0,
+      "seconds": 0.324,
+      "stdout": "\nchanged 2 packages in 269ms\n",
+      "stderr": "npm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 25ms (cache updated)\nnpm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 7ms (cache updated)\nnpm http cache @oss-test/cli@http://127.0.0.1:43617/tarballs/2.0.0.tgz 1ms (cache hit)\nnpm http cache @oss-test/cli-linux-x64@http://127.0.0.1:43617/tarballs/2.0.0-linux-x64.tgz 0ms (cache hit)\nnpm http fetch GET 200 http://127.0.0.1:43617/tarballs/2.0.0.tgz 14ms (cache miss)\nnpm http fetch GET 200 http://127.0.0.1:43617/tarballs/2.0.0-linux-x64.tgz 15ms (cache miss)\n"
+    },
+    {
+      "stage": "same-version-reinstall",
+      "arguments": [
+        "install",
+        "-g",
+        "@oss-test/cli@latest"
+      ],
+      "exit_code": 0,
+      "seconds": 0.286,
+      "stdout": "\nchanged 2 packages in 238ms\n",
+      "stderr": "npm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 30ms (cache updated)\nnpm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 9ms (cache updated)\nnpm http cache @oss-test/cli@http://127.0.0.1:43617/tarballs/2.0.0.tgz 0ms (cache hit)\nnpm http cache @oss-test/cli-linux-x64@http://127.0.0.1:43617/tarballs/2.0.0-linux-x64.tgz 0ms (cache hit)\n"
+    },
+    {
+      "stage": "repair-missing-alias",
+      "arguments": [
+        "install",
+        "-g",
+        "@oss-test/cli@latest"
+      ],
+      "exit_code": 0,
+      "seconds": 0.368,
+      "stdout": "\nadded 1 package, and changed 1 package in 315ms\n",
+      "stderr": "npm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 46ms (cache updated)\nnpm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 10ms (cache updated)\nnpm http cache @oss-test/cli@http://127.0.0.1:43617/tarballs/2.0.0.tgz 0ms (cache hit)\nnpm http cache @oss-test/cli-linux-x64@http://127.0.0.1:43617/tarballs/2.0.0-linux-x64.tgz 0ms (cache hit)\n"
+    },
+    {
+      "stage": "uninstall-control",
+      "arguments": [
+        "uninstall",
+        "-g",
+        "@oss-test/cli"
+      ],
+      "exit_code": 0,
+      "seconds": 0.258,
+      "stdout": "\nremoved 2 packages in 207ms\n",
+      "stderr": ""
+    },
+    {
+      "stage": "uninstall-reinstall-control",
+      "arguments": [
+        "install",
+        "-g",
+        "@oss-test/cli@latest"
+      ],
+      "exit_code": 0,
+      "seconds": 0.365,
+      "stdout": "\nadded 2 packages in 299ms\n",
+      "stderr": "npm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 28ms (cache updated)\nnpm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 7ms (cache updated)\nnpm http cache @oss-test/cli@http://127.0.0.1:43617/tarballs/2.0.0.tgz 0ms (cache hit)\nnpm http cache @oss-test/cli-linux-x64@http://127.0.0.1:43617/tarballs/2.0.0-linux-x64.tgz 0ms (cache hit)\n"
+    },
+    {
+      "stage": "configure-fresh-prefix",
+      "arguments": [
+        "config",
+        "set",
+        "prefix",
+        "$DIAGNOSTIC_ROOT/run/fresh",
+        "--location=user"
+      ],
+      "exit_code": 0,
+      "seconds": 0.103,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "stage": "fresh-warm-cache-control",
+      "arguments": [
+        "install",
+        "-g",
+        "@oss-test/cli@latest"
+      ],
+      "exit_code": 0,
+      "seconds": 0.306,
+      "stdout": "\nadded 2 packages in 254ms\n",
+      "stderr": "npm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 23ms (cache updated)\nnpm http fetch GET 200 http://127.0.0.1:43617/@oss-test%2fcli 7ms (cache updated)\nnpm http cache @oss-test/cli@http://127.0.0.1:43617/tarballs/2.0.0.tgz 0ms (cache hit)\nnpm http cache @oss-test/cli-linux-x64@http://127.0.0.1:43617/tarballs/2.0.0-linux-x64.tgz 0ms (cache hit)\n"
+    }
+  ],
+  "disk_checks": [
+    {
+      "stage": "old-install",
+      "expected": {
+        "wrapper_version": "1.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "1.0.0-linux-x64",
+        "alias_sentinel": "1.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "observed": {
+        "wrapper_version": "1.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "1.0.0-linux-x64",
+        "alias_sentinel": "1.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "passed": true
+    },
+    {
+      "stage": "upgrade",
+      "expected": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "observed": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "passed": true
+    },
+    {
+      "stage": "same-version-reinstall",
+      "expected": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "observed": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "passed": true
+    },
+    {
+      "stage": "repair-missing-alias",
+      "expected": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "observed": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "passed": true
+    },
+    {
+      "stage": "uninstall-control",
+      "wrapper_removed": true,
+      "passed": true
+    },
+    {
+      "stage": "uninstall-reinstall-control",
+      "expected": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "observed": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "passed": true
+    },
+    {
+      "stage": "fresh-warm-cache-control",
+      "expected": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "observed": {
+        "wrapper_version": "2.0.0",
+        "alias_exists": true,
+        "alias_name": "@oss-test/cli",
+        "alias_version": "2.0.0-linux-x64",
+        "alias_sentinel": "2.0.0-linux-x64",
+        "incompatible_alias_exists": false
+      },
+      "passed": true
+    }
+  ],
+  "requests": [
+    {
+      "stage": "old-install",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "old-install",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "old-install",
+      "method": "GET",
+      "path": "/tarballs/1.0.0.tgz"
+    },
+    {
+      "stage": "old-install",
+      "method": "GET",
+      "path": "/tarballs/1.0.0-linux-x64.tgz"
+    },
+    {
+      "stage": "upgrade",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "upgrade",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "upgrade",
+      "method": "GET",
+      "path": "/tarballs/2.0.0.tgz"
+    },
+    {
+      "stage": "upgrade",
+      "method": "GET",
+      "path": "/tarballs/2.0.0-linux-x64.tgz"
+    },
+    {
+      "stage": "same-version-reinstall",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "same-version-reinstall",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "repair-missing-alias",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "repair-missing-alias",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "uninstall-reinstall-control",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "uninstall-reinstall-control",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "fresh-warm-cache-control",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    },
+    {
+      "stage": "fresh-warm-cache-control",
+      "method": "GET",
+      "path": "/@oss-test/cli"
+    }
+  ],
+  "unexpected_routes": [],
+  "non_loopback_fetch_log_lines": [],
+  "incompatible_platform_tarball_requests": [],
+  "error": null,
+  "all_checks_passed": true
+}

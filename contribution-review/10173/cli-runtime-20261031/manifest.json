@@ -1,0 +1,264 @@
+{
+  "files": [
+    {
+      "path": "cli-boundary-10173.py",
+      "bytes": 11154,
+      "sha256": "56075593e3e79bd4879bb4768c7e009025c8f0f0b1f7a15a5845e0699cd70fe7",
+      "original_sha256": "56075593e3e79bd4879bb4768c7e009025c8f0f0b1f7a15a5845e0699cd70fe7",
+      "transformation": "none"
+    },
+    {
+      "path": "execution.log",
+      "bytes": 1631,
+      "sha256": "7c466619be9c245f108e73f014209c365f53d6296d625403d739c3221c3e9133",
+      "original_sha256": "7c466619be9c245f108e73f014209c365f53d6296d625403d739c3221c3e9133",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/configure-fresh-prefix.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/configure-fresh-prefix.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/configure-prefix.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/configure-prefix.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/fresh-warm-cache-control.stderr",
+      "bytes": 359,
+      "sha256": "1a383228e505665e41e79d781289127fa02c2cb045bdfedf65d93500b5f05b70",
+      "original_sha256": "1a383228e505665e41e79d781289127fa02c2cb045bdfedf65d93500b5f05b70",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/fresh-warm-cache-control.stdout",
+      "bytes": 27,
+      "sha256": "7dbb4b5f3426e71ed66901e1960ffaf760802464688df3f65e3d5e56a99da5a4",
+      "original_sha256": "7dbb4b5f3426e71ed66901e1960ffaf760802464688df3f65e3d5e56a99da5a4",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/npm-version.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/npm-version.stdout",
+      "bytes": 8,
+      "sha256": "324f52ea836cd47edb7932f3992fa50b67fc7fec13a6950e1a1ddf720afab6d2",
+      "original_sha256": "324f52ea836cd47edb7932f3992fa50b67fc7fec13a6950e1a1ddf720afab6d2",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/old-install.stderr",
+      "bytes": 529,
+      "sha256": "c751732cc7332a5373d454ae7d887a561f3b7369c22f9a11e3acaf362e764c86",
+      "original_sha256": "c751732cc7332a5373d454ae7d887a561f3b7369c22f9a11e3acaf362e764c86",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/old-install.stdout",
+      "bytes": 27,
+      "sha256": "c1684ccee2502f57677b7f452e3a3eb08ce073d6eca542949900fc0f60af5999",
+      "original_sha256": "c1684ccee2502f57677b7f452e3a3eb08ce073d6eca542949900fc0f60af5999",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/repair-missing-alias.stderr",
+      "bytes": 360,
+      "sha256": "7234bee1144d9aa45eded5fa0da884a8743c913d8df7618b1d7289b9bb07587a",
+      "original_sha256": "7234bee1144d9aa45eded5fa0da884a8743c913d8df7618b1d7289b9bb07587a",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/repair-missing-alias.stdout",
+      "bytes": 49,
+      "sha256": "7bf89248ee56f255f26406c09b0d5548392f74fa0bc56148a62abe7081ea7c5d",
+      "original_sha256": "7bf89248ee56f255f26406c09b0d5548392f74fa0bc56148a62abe7081ea7c5d",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/same-version-reinstall.stderr",
+      "bytes": 359,
+      "sha256": "eee0db5d6f0e6d2f47ece8fe70ae10b4ab2400ad36070428f740b0e47d616eb1",
+      "original_sha256": "eee0db5d6f0e6d2f47ece8fe70ae10b4ab2400ad36070428f740b0e47d616eb1",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/same-version-reinstall.stdout",
+      "bytes": 29,
+      "sha256": "80c621580b52849c9f74d62e1d5cd3bce5081f088824c6758faad67699930476",
+      "original_sha256": "80c621580b52849c9f74d62e1d5cd3bce5081f088824c6758faad67699930476",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/uninstall-control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/uninstall-control.stdout",
+      "bytes": 29,
+      "sha256": "a432d376d5b402bcb1bcc585f83459ad9adca3c1ef84a00d21431f48858aa1b2",
+      "original_sha256": "a432d376d5b402bcb1bcc585f83459ad9adca3c1ef84a00d21431f48858aa1b2",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/uninstall-reinstall-control.stderr",
+      "bytes": 359,
+      "sha256": "e9731677b12a5741bc28674a2a82c2027585a61b9cda2bcb89f8f042ce000a75",
+      "original_sha256": "e9731677b12a5741bc28674a2a82c2027585a61b9cda2bcb89f8f042ce000a75",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/uninstall-reinstall-control.stdout",
+      "bytes": 27,
+      "sha256": "13890c4cc68dfbba1d7992a446da9fc088dfaf3af947cd1232284d76ac4f0642",
+      "original_sha256": "13890c4cc68dfbba1d7992a446da9fc088dfaf3af947cd1232284d76ac4f0642",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/upgrade.stderr",
+      "bytes": 535,
+      "sha256": "d5bd81d6660bed008e3d5c0bf9b1829b6d78af3e4e31ee75505bc3f4f92a4bdc",
+      "original_sha256": "d5bd81d6660bed008e3d5c0bf9b1829b6d78af3e4e31ee75505bc3f4f92a4bdc",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/upgrade.stdout",
+      "bytes": 29,
+      "sha256": "17608a746a7115c6cd5439d27a20d0434c5c253540b8104bd7fdbd6ccbe818bf",
+      "original_sha256": "17608a746a7115c6cd5439d27a20d0434c5c253540b8104bd7fdbd6ccbe818bf",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/verify-prefix.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "logs/verify-prefix.stdout",
+      "bytes": 28,
+      "sha256": "1281335f97b135e51c8dc9b71243a1b9da364de0f2baacb5ea1908c00f72409b",
+      "original_sha256": "1df3fa9ff2e3b74110377c3afcda5f6bf526f6c4c63b807306352f31d2e783ee",
+      "transformation": "absolute diagnostic path replaced with $DIAGNOSTIC_ROOT"
+    },
+    {
+      "path": "manifest-initial.json",
+      "bytes": 3288,
+      "sha256": "bb933ef2cd74c8049e8d79fc8f7933ecfadaa967733337868519e6aadb2ad419",
+      "original_sha256": "bb933ef2cd74c8049e8d79fc8f7933ecfadaa967733337868519e6aadb2ad419",
+      "transformation": "none"
+    },
+    {
+      "path": "manifest-upgrade.json",
+      "bytes": 3288,
+      "sha256": "7a5ecaebf31b16dfa63f9d640b5bc0120a54febf11c92c06b8879913d630b2be",
+      "original_sha256": "7a5ecaebf31b16dfa63f9d640b5bc0120a54febf11c92c06b8879913d630b2be",
+      "transformation": "none"
+    },
+    {
+      "path": "result.json",
+      "bytes": 11907,
+      "sha256": "4b788635b7520b64e28d28a05009a5cf433656420965fe1bcf3bff53116d3979",
+      "original_sha256": "6de254d79c7986017261ccc5bebc29161a04f43a98d44a2b5671298775e2bd4d",
+      "transformation": "absolute diagnostic path replaced with $DIAGNOSTIC_ROOT"
+    },
+    {
+      "path": "runtime-provenance.json",
+      "bytes": 815,
+      "sha256": "d671a9a4fb76ee9cfaab1f8a1473291435f9bb89d1c81f7c36dda617f7e70e09",
+      "original_sha256": "d671a9a4fb76ee9cfaab1f8a1473291435f9bb89d1c81f7c36dda617f7e70e09",
+      "transformation": "none"
+    },
+    {
+      "path": "setup-failure/execution.log",
+      "bytes": 201,
+      "sha256": "8631e4205326bb7d2e86e4fde34234a65baf47379ddf4fe64abe519d679906b7",
+      "original_sha256": "9907296bbbea08d393a8bb8cdfa4f8f9dcca47315e3034ee040a3ea64ec7c0cf",
+      "transformation": "absolute diagnostic path replaced with $DIAGNOSTIC_ROOT"
+    },
+    {
+      "path": "setup-failure/result.json",
+      "bytes": 1247,
+      "sha256": "ae7f94f3e69d444806ee271dea7006e4b0f4841f51201e794aebd37656a4b109",
+      "original_sha256": "137e1613b9339c5d31defc439385707c157f137d20b9729ccaef141db088f158",
+      "transformation": "absolute diagnostic path replaced with $DIAGNOSTIC_ROOT"
+    },
+    {
+      "path": "setup-repair.json",
+      "bytes": 238,
+      "sha256": "b7492d18a0d5ca66ab5b3b3c5f79e24b333088a3540690871daff76022d6da93",
+      "original_sha256": "b7492d18a0d5ca66ab5b3b3c5f79e24b333088a3540690871daff76022d6da93",
+      "transformation": "none"
+    },
+    {
+      "path": "tarballs/1.0.0-linux-arm64.tgz",
+      "bytes": 209,
+      "sha256": "85e4a7234221d0308f375fc5548481aaf724f9ebdfd1e14076af548753a29ff9",
+      "original_sha256": "85e4a7234221d0308f375fc5548481aaf724f9ebdfd1e14076af548753a29ff9",
+      "transformation": "none"
+    },
+    {
+      "path": "tarballs/1.0.0-linux-x64.tgz",
+      "bytes": 201,
+      "sha256": "bb218f053a802c18223c8a4ca9342e72b2cfe6394ae5a5cada0fc288593ffbcf",
+      "original_sha256": "bb218f053a802c18223c8a4ca9342e72b2cfe6394ae5a5cada0fc288593ffbcf",
+      "transformation": "none"
+    },
+    {
+      "path": "tarballs/1.0.0.tgz",
+      "bytes": 233,
+      "sha256": "7a747c6828cb6cfc291b68bab63bfc7e920d395f5cbe55a82284127fe2c693b4",
+      "original_sha256": "7a747c6828cb6cfc291b68bab63bfc7e920d395f5cbe55a82284127fe2c693b4",
+      "transformation": "none"
+    },
+    {
+      "path": "tarballs/2.0.0-linux-arm64.tgz",
+      "bytes": 209,
+      "sha256": "c202b1ccf28cfd124da3c04f356583ef58ac5e18e716aac33067fd6ad413fa74",
+      "original_sha256": "c202b1ccf28cfd124da3c04f356583ef58ac5e18e716aac33067fd6ad413fa74",
+      "transformation": "none"
+    },
+    {
+      "path": "tarballs/2.0.0-linux-x64.tgz",
+      "bytes": 203,
+      "sha256": "4127d5882dfaa5ce766e533e21a0591258bf7f1b63190ea62ed1ebd2ea3039dc",
+      "original_sha256": "4127d5882dfaa5ce766e533e21a0591258bf7f1b63190ea62ed1ebd2ea3039dc",
+      "transformation": "none"
+    },
+    {
+      "path": "tarballs/2.0.0.tgz",
+      "bytes": 230,
+      "sha256": "86d3eecdcf4a4913c91ac8d7f8a2f6565e48921ade50fd96b6767eb7e819b328",
+      "original_sha256": "86d3eecdcf4a4913c91ac8d7f8a2f6565e48921ade50fd96b6767eb7e819b328",
+      "transformation": "none"
+    }
+  ],
+  "note": "Original fixture source bytes are preserved; task-private absolute paths in logs/receipts are redacted."
+}
